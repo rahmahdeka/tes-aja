@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator IMT & Risiko Kesehatan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Kalkulator IMT</h1>
+    <p class="subtitle">Skrining awal kesehatan berbasis Indeks Massa Tubuh</p>
+
+    <label>Berat Badan (kg)</label>
+    <input type="number" id="bb" placeholder="contoh: 60">
+
+    <label>Tinggi Badan (cm)</label>
+    <input type="number" id="tb" placeholder="contoh: 165">
+
+    <label>Aktivitas Fisik</label>
+    <select id="aktivitas">
+      <option value="rendah">Rendah</option>
+      <option value="sedang">Sedang</option>
+      <option value="tinggi">Tinggi</option>
+    </select>
+
+    <button onclick="hitungIMT()">Hitung</button>
+
+    <div class="hasil" id="hasil"></div>
+    <div class="solusi" id="solusi"></div>
+
+    <p class="disclaimer">
+      *Hasil ini bersifat edukatif dan bukan diagnosis medis.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
